@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Zen Dots";
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;  
+}
+body{
+    overflow-x: hidden;
+    background: #020617    
+}
+.test{
+    border-bottom-right-radius: 1rem;
+}
+.news-text {
+    font-family: "Zen Dots";
+    color: black;
+}
+
+.container {
+    height: 100vh;
+}
+
+.col-1 {
+    height: 100%;
+}
+
+.content {
+    border-top-right-radius: 10px;
+}
+
+.car-f1-title,
+.info-btn,
+.car-title {
+    font-family: "Zen Dots";
+}
+
+.box {
+    border-top: 7px solid #dc2626;
+    border-right: 7px solid #dc2626;
+    border-top-right-radius: 10px;
+}
+
+.box2 {
+    border-right: 8px solid #dc2626;
+    border-bottom: 8px solid #dc2626;
+    border-bottom-right-radius: 1rem;
+    padding: 4px;
+}
+
+/* loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #020617;
+    z-index: 1000;
+    
+    transition: transform 1.5s ease-in-out;
+}
+
+.loader.loaded {
+    transition-delay: 3200ms;
+    transform: translateY(-100%);
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    font-family: "Zen Dots";
+    padding: 2rem;
+}
+
+.content h1 {
+    -webkit-text-stroke-color: revert;
+    -webkit-text-stroke-width: 3px;
+}
+
+.activate {
+    color: #dc2626;
+}
+
+.progress{
+    background-color: '#76c7c0';
+    transition: width 0.1s ease-in-out,
+    
+}
+
+.main-box{
+ background-color: black;
+}
+.marques{
+    width: 100%;
+    padding-left: 4rem;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.texting{
+    font-family: "Zen Dots";
+    font-size: 20em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: -10%;
+    animation: mark 100s linear infinite;
+    background-image: linear-gradient(90deg, #c6f542 55%, #00eaff 46% ,#edf035 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text{
+   
+    -webkit-box-reflect:below -0.4em linear-gradient(transparent ,#000);
+}
+.text span{
+    position: relative;
+    display: inline-block;
+}
+
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-image: linear-gradient(145deg,#434441,#d5cdce,#e3cae4b5);
+   
+  }
+  .slider img{
+    object-fit: cover;
+  }
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  video{
+    width: 100%;
+  }
+.video-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: linear-gradient(145deg,#464545,#3e3b3b,#1d1c1db5);
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3em 2em 0 2em;
+    font-size: 2.2em;
+    line-height: 1.6;
+    color: #edf035;
+    background-image: linear-gradient(90deg, #c6f542, #01d9ff, #06ddf5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Marque1 {
+    background-image: linear-gradient(90deg, #c2e75b, #51ff01, #06ddf5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Marque2 {
+    background-image: linear-gradient(90deg, #eec01b, #56abe7, #1206f5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Marque3 {
+    background-image: linear-gradient(145deg, #ccdd9c, #f90522, #5d1b5e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Marque4 {
+    background-image: linear-gradient(90deg, #00fc87, #9465b6, #5ce08e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes mark {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 640px) { /* Small devices */
+    .header {
+        padding: 2em 1em 0 1em;
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+    .main-box{
+        margin-top: 1px;
+    }
+  
+    .Marque1,
+    .Marque2,
+    .Marque3,
+    .Marque4 {
+        font-size: 1.2em; /* Smaller font size for marques */
+    }
+}
+
+@media (min-width: 340px) and (max-width: 768px) { /* Medium devices */
+    .header {
+        padding: 2.5em 1.5em 0 1.5em;
+        font-size: 1.8em;
+       
+    }
+
+    .Marque1,
+    .Marque2,
+    .Marque3,
+    .Marque4 {
+        font-size: 0.2em; /* Medium font size for marques */
+        
+        
+    }
+}
